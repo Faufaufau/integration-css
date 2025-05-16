@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
 * {
     font-family: Inter;
     margin: 0;
@@ -7,24 +7,24 @@
 }
 
 h2 {
-    color:#4D4D4D;
-text-align: center;
-font-size: 36px;
-font-weight: 600;
-line-height: 44px
+    color: #4d4d4d;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
 }
 
 h3 {
-font-size: 28px;
-font-weight: 700;
-line-height: 36px; 
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
 }
 
 p {
-    color:#717171;
-text-align: center;
-font-size: 16px;
-line-height: 24px;
+    color: #717171;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 body {
@@ -32,19 +32,27 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    background: #F5F7FA;
+    background: #ffffff;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background: #ffffff;
+}
 
 nav {
     display: flex;
     width: 100vw;
     max-width: 1152px;
     height: 100px;
-justify-content: space-between;
-align-items: center;
-align-self: stretch;
-
+    padding: 0 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
 }
 
 .logo {
@@ -56,33 +64,40 @@ align-self: stretch;
 
 .icon {
     width: 35px;
-height: 24px;
-flex-shrink: 0;
+    height: 24px;
+    flex-shrink: 0;
 }
 
 .nexcent {
     width: 111px;
-height: 20px;
-flex-shrink: 0;
-fill: #263238;
+    height: 20px;
+    flex-shrink: 0;
+    fill: #263238;
 }
 
 .menu {
     display: flex;
     width: 588px;
-height: 24px;
-font-weight: 500;
-align-items: center;
+    height: 24px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
 }
 
 .menu ul {
     display: inline-flex;
     width: 100%;
-justify-content: space-around;
-align-items: center;
-gap: auto;
-list-style-type: none;
-font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+    gap: auto;
+    list-style-type: none;
+    font-size: 16px;
 }
 
 .menu a {
@@ -92,27 +107,26 @@ font-size: 16px;
 
 .connexion {
     display: flex;
-align-items: flex-start;
-gap: 14px;
-line-height: 24px;
+    align-items: flex-start;
+    gap: 14px;
+    line-height: 24px;
 }
-
 
 .login {
     display: flex;
-padding: 10px 20px;
-align-items: center;
-gap: 10px;
-border-radius: 6px;
-border: 0;
-background: #ffffff;
-color: #4CAF4F;
-text-align: center;
-transition: 300ms;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 0;
+    background: #ffffff;
+    color: #4caf4f;
+    text-align: center;
+    transition: 300ms;
 }
 
 .login:hover {
-    background: #4CAF4F;
+    background: #4caf4f;
     color: #ffffff;
     cursor: pointer;
 }
@@ -120,76 +134,86 @@ transition: 300ms;
 .signup {
     display: flex;
     white-space: nowrap;
-padding: 10px 20px;
-align-items: center;
-gap: 10px;
-border-radius: 6px;
-border: 0;
-background: #4CAF4F;
-color: #ffffff;
-text-align: center;
-transition: 300ms;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 0;
+    background: #4caf4f;
+    color: #ffffff;
+    text-align: center;
+    transition: 300ms;
 }
 
 .signup:hover {
     background: #ffffff;
-    color: #4CAF4F;
+    color: #4caf4f;
     cursor: pointer;
 }
 
+.hero-box {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: #f5f7fa;
+}
 .hero {
     display: flex;
     width: 100vw;
+    height: fit-content;
     max-width: 1152px;
-padding: 96px 0;
-justify-content: space-around;
-align-items: center;
-align-self: stretch;
-background: #F5F7FA;
+    padding: 96px 0;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
 }
 
 .hero-content {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 32px;
-flex: 1 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    gap: 32px;
+    flex: 1 0 0;
 }
 
 .hero-content div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+
     gap: 16px;
     align-self: stretch;
 }
 
 .button {
     display: flex;
-padding: 14px 32px;
-justify-content: center;
-align-items: center;
-border-radius: 4px;
-background: #4CAF4F;
-font-size: 16px;
-color: white;
+    padding: 14px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #4caf4f;
+    font-size: 16px;
+    color: white;
 }
 
 .hero-title {
-    color: #4D4D4D;
-font-size: 64px;
-font-weight: 600;
-line-height: 76px; 
-align-self: stretch;
-white-space: nowrap;
-
+    color: #4d4d4d;
+    width: 100%;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 76px;
+    align-self: stretch;
+    white-space: nowrap;
 }
 
 .hero-subtitle {
-    color:#717171;
+    color: #717171;
     font-size: 16px;
-font-weight: 400;
-line-height: 24px; 
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .dots {
@@ -203,20 +227,18 @@ line-height: 24px;
     display: flex;
     width: 100vw;
     max-width: 1152px;
-padding: 70px 0px;
-flex-direction: column;
-align-items: center;
-gap: 40px;
-align-self: stretch;
+    padding: 70px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
-
 
 .clients > div {
     display: flex;
-width: 1152px;
-flex-direction: column;
-align-items: center;
-gap: 8px;
+    max-width: 1152px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .clients ul {
@@ -224,10 +246,10 @@ gap: 8px;
     width: 100vw;
     max-width: 1152px;
     height: 98px;
-justify-content: space-between;
-list-style-type: none;
-align-items: center;
-align-self: stretch;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    align-self: stretch;
 }
 
 .clients > div > div {
@@ -239,15 +261,30 @@ align-self: stretch;
     align-self: stretch;
 }
 
-#services {
+.community {
     display: flex;
-width: 100%;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+    width: 100vw;
+    max-width: 1152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
 }
 
-#services > div {
+.community > div {
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,11 +293,184 @@ align-items: center;
     width: 300px;
 }
 
-#services > div > div {
+.services > div > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 16px;
     align-self: stretch;
+}
+
+.pixelgrade {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 40px 0px;
+    background-color: #f5f7fa;
+}
+.pixelgrade > div {
+    display: flex;
+    width: 100vw;
+    max-width: 1152px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.pixelgrade > img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.pixelgrade > div > div {
+    display: flex;
+    width: 661px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+}
+
+.pixelgrade p {
+    color: #717171;
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.pixelgrade h2 {
+    color: #4d4d4d;
+    text-align: left;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.pixelgrade a {
+    display: flex;
+    text-decoration: none;
+    background-color: #4caf4f;
+    color: #ffffff;
+    padding: 14px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+}
+
+.statistics {
+    display: flex;
+    width: 1152px;
+    padding: 75px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistics-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    nav {
+        justify-content: space-between;
+    }
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .connexion {
+        display: none;
+    }
+    .menu {
+        width: fit-content;
+    }
+    .menu > ul {
+        display: none;
+        background: #dff0d8;
+        box-shadow: 0 8px 16px black;
+        z-index: 1;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu:hover > ul {
+        display: block;
+    }
+    .hero {
+        padding: 0 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .hero-content {
+        width: 100%;
+    }
+    .hero-content div {
+        width: 100%;
+    }
+    .hero-title {
+        white-space: normal;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .clients > div {
+        width: 100%;
+        padding: 0 60px;
+    }
+
+    .clients ul {
+        width: 100%;
+        gap: 10px;
+        justify-content: space-around;
+    }
+    .clients-logos > li {
+        display: none;
+    }
+    .clients-logos > li:nth-last-child(-n + 3) {
+        display: block;
+    }
+
+    .community {
+        padding: 0 16px;
+    }
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .pixelgrade {
+        padding: 0 16px;
+    }
+    .pixelgrade > div {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .pixelgrade > div > div {
+        width: 100%;
+    }
 }
